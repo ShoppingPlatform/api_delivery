@@ -20,10 +20,10 @@ app.use(express.json());
 
 app.use("/api/v1/orders", orderRoute);
 
-// app.listen(process.env.PORT || 5000, () => {
-//   console.log("Backend server is running!");
-// });
-
-app.listen(5002, () => {
-  console.log("Backend delivery server is running!");
+app.listen(process.env.PORT || 5002, () => {
+  console.log("Backend server is running!");
 });
+
+// app.listen(5002, () => {
+//   console.log("Backend delivery server is running!");
+// });
